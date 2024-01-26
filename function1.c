@@ -15,7 +15,7 @@ return 1;
 
 long int num;
 while (fscanf(fp, "%ld", &num) == 1) {
-test_divisor(num);  // Call the function to factorize
+test_divisor(num);
 }
 
 fclose(fp);
