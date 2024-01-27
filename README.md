@@ -34,7 +34,7 @@ Time limit: Your program will be killed after 5 seconds if it hasn’t finish
 Push all your scripts, source code, etc… to your repository
 we will only run your executable factors
 
-julien@ubuntu:~/factors$ cat tests/test00 
+$ cat tests/test00 
 4
 12
 34
@@ -49,7 +49,7 @@ julien@ubuntu:~/factors$ cat tests/test00
 9797973
 49
 239809320265259
-julien@ubuntu:~/factors$ time ./factors tests/test00
+$ ./factors tests/test00
 4=2*2
 12=6*2
 34=17*2
@@ -68,7 +68,7 @@ julien@ubuntu:~/factors$ time ./factors tests/test00
 real    0m0.009s
 user    0m0.008s
 sys 0m0.001s
-julien@ubuntu:~/factors$ 
+ 
 #Repo:
 
 #GitHub repository: RSA-Factoring-Challenge
@@ -89,24 +89,24 @@ There is only one number in the files
 How far can you go in less than 5 seconds?
 
 Read: RSA Factoring Challenge
-julien@ubuntu:~/RSA Factoring Challenge$ cat tests/rsa-1
+RSA Factoring Challenge$ cat tests/rsa-1
 6
-julien@ubuntu:~/RSA Factoring Challenge$ ./rsa tests/rsa-1
+RSA Factoring Challenge$ ./rsa tests/rsa-1
 6=3*2
-julien@ubuntu:~/RSA Factoring Challenge$ cat tests/rsa-2
+RSA Factoring Challenge$ cat tests/rsa-2
 77
-julien@ubuntu:~/RSA Factoring Challenge$ ./rsa tests/rsa-2
+RSA Factoring Challenge$ ./rsa tests/rsa-2
 77=11*7
-julien@ubuntu:~/RSA Factoring Challenge$ [...]  
-julien@ubuntu:~/RSA Factoring Challenge$ cat tests/rsa-15
+RSA Factoring Challenge$ [...]  
+RSA Factoring Challenge$ cat tests/rsa-15
 239821585064027
-julien@ubuntu:~/RSA Factoring Challenge$ ./rsa tests/rsa-15 
+RSA Factoring Challenge$ ./rsa tests/rsa-15 
 239821585064027=15486481*15485867
-julien@ubuntu:~/RSA Factoring Challenge$ cat tests/rsa-16
+RSA Factoring Challenge$ cat tests/rsa-16
 2497885147362973
-julien@ubuntu:~/RSA Factoring Challenge$ ./rsa tests/rsa-16
+RSA Factoring Challenge$ ./rsa tests/rsa-16
 2497885147362973=49979141*49978553
-julien@ubuntu:~/RSA Factoring Challenge$ [...]
+
 #Repo:
 
 #GitHub repository: RSA-Factoring-Challenge
