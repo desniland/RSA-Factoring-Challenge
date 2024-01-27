@@ -1,46 +1,20 @@
-#!/usr/bin/python3
-from sys import argv
-import math
-"""gets the first two factors of any integer"""
+#!/usr/bin/bash
+#Factorize as many numbers as possible into a product of two smaller numbers.
 
-
-def is_prime(num):
-    """checks if a integer is prime"""
-    x = 3
-    if num % 2 == 0:
-        return False
-    while x * x <= num:
-        if num % x == 0:
-            return False
-        x += 2
-    return True
-
-
-def factorize_num(num):
-    """This factor function gets the factors of a integers and prints to stdout"""
-    if num % 2 == 0:
-        x = 2
-        print("{}={}*{}".format(num, int(num/x), x))
-    else:
-        sq = math.sqrt(num)
-        if sq % 1 == 0:
-            print("{}={}*{}".format(num, sq, int(num/sq)))
-            return
-        sq = int(sq) + 1
-        for x in range(3, sq, +2):
-            if num % x == 0:
-                if is_prime(x):
-                    print("{}={}*{}".format(num, int(num/x), x))
-                    return
-
-
-def factors(filename):
-    """read_file"""
-    with open(filename, encoding="utf-8") as my_file:
-        for x in my_file.readlines():
-            n = int(x)
-            result = factorize_num(n)
-
-
-if __name__ == "__main__":
-    factors(argv[1])
+    while IFS= read -r LINE
+    do
+        let FLAG=1
+        let DIV=2
+        while [ $FLAG -eq 1 ]
+        do
+            REST=$(($LINE%$DIV))
+            if [[ $REST -eq 0 ]]
+            then
+                let NUM=$LINE
+                let COUNT=$(($NUM/$DIV))
+                echo "$LINE=$COUNT*$DIV"
+                let FLAG=0
+            fi
+            let DIV=$(($DIV+1))
+        done
+    done < $1
