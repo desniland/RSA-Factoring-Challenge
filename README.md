@@ -1,17 +1,17 @@
-#RSA Factoring Challange
+# RSA Factoring Challange
 
-#Background Context
+# Background Context
 
 We have sniffed an unsecured network and found numbers that are used to encrypt very important documents. It seems that those numbers are not always generated using large enough prime numbers. Your mission should you choose to accept it, is to factorize these numbers as fast as possible before the target fixes this bug on their server - so that we can decode the encrypted documents.
 
 
-#Requirements
-General
+# Requirements
+# General
 You can choose the language of your choice.
 OS needs to be Standard Ubuntu 20.04 LTS/
 
 
-#Tasks
+# Tasks
 
 
 0. Factorize all the things!
@@ -69,10 +69,11 @@ real    0m0.009s
 user    0m0.008s
 sys 0m0.001s
  
-#Repo:
+Repo:
 
-#GitHub repository: RSA-Factoring-Challenge
-#File: factors
+GitHub repository: RSA-Factoring-Challenge
+
+File: factors
  
   
 1. RSA Factoring Challenge
@@ -107,9 +108,10 @@ RSA Factoring Challenge$ cat tests/rsa-16
 RSA Factoring Challenge$ ./rsa tests/rsa-16
 2497885147362973=49979141*49978553
 
-#Repo:
+Repo:
 
-#GitHub repository: RSA-Factoring-Challenge
-#File: rsa
+GitHub repository: RSA-Factoring-Challenge
+
+File: rsa
    
 Copyright © 2024 ALX, All rights reserved.
